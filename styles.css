@@ -2,9 +2,10 @@
   box-sizing: border-box;
 }
 :root {
-  --primary: hotpink;
+  --primary: #aed6f1;
   --black: #333;
-  --secondary: papayawhip;
+  --secondary:  #ebf5fb ;
+  --blue:  #21618c;
 }
 body {
   margin: 0px;
