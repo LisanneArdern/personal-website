@@ -7,6 +7,12 @@
   --black: #333;
   --secondary: #ebf5fb;
   --blue: #21618c;
+  --darkskyblue: #96bdc6;
+  --lightskyblue: #d7e6ea;
+  --morningblue: #81968f;
+  --khakiweb: #81968f;
+  --champagnepink: #e8ccbf;
+  --palepurple: #e9d6ec;
 }
 
 body {
@@ -16,7 +22,7 @@ body {
   font-size: 112.5%;
   line-height: 1.4;
   color: var(--black);
-  background-color: var(--secondary);
+  background-color: var(--lightskyblue);
 }
 
 input,
@@ -60,4 +66,8 @@ footer {
 
 .column {
   display: flex;
+}
+
+#CV {
+  background-color: var(--khakiweb);
 }
