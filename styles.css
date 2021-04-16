@@ -1,13 +1,14 @@
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
+
 :root {
   --primary: #aed6f1;
   --black: #333;
   --secondary: #ebf5fb;
   --blue: #21618c;
 }
+
 body {
   margin: 0px;
   padding: 10px;
@@ -17,6 +18,7 @@ body {
   color: var(--black);
   background-color: var(--secondary);
 }
+
 input,
 button,
 textarea {
@@ -27,6 +29,7 @@ header {
   padding: 20px;
   margin-bottom: 40px;
 }
+
 .button {
   background: var(--black);
   color: white;
@@ -35,13 +38,19 @@ header {
   border-radius: 4px;
 }
 
+main {
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
 img {
   width: 100%;
   height: auto;
 }
-main {
-  padding: 20px;
-  margin-bottom: 40px;
+
+figure {
+  padding: 0;
+  margin: 0;
 }
 
 footer {
