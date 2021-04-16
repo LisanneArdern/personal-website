@@ -1,11 +1,12 @@
 * {
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 :root {
   --primary: #aed6f1;
   --black: #333;
-  --secondary:  #ebf5fb ;
-  --blue:  #21618c;
+  --secondary: #ebf5fb;
+  --blue: #21618c;
 }
 body {
   margin: 0px;
@@ -22,15 +23,14 @@ textarea {
   font-size: inherit;
 }
 
-}
-#header {
+header {
   padding: 20px;
   margin-bottom: 40px;
 }
 .button {
   background: var(--black);
   color: white;
-  border-botton: none;
+  border-bottom: none;
   padding: 8px;
   border-radius: 4px;
 }
@@ -39,13 +39,16 @@ img {
   width: 100%;
   height: auto;
 }
-/* .main {
-  display: flex;
-  justify-content:space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
-} */
+main {
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
 footer {
   padding: 20px;
   margin-bottom: 40px;
+}
+
+.column {
+  display: flex;
 }
