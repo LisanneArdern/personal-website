@@ -3,16 +3,9 @@
 }
 
 :root {
-  --primary: #aed6f1;
   --black: #333;
-  --secondary: #ebf5fb;
-  --blue: #21618c;
-  --darkskyblue: #96bdc6;
   --lightskyblue: #d7e6ea;
-  --morningblue: #81968f;
   --khakiweb: #81968f;
-  --champagnepink: #e8ccbf;
-  --palepurple: #e9d6ec;
 }
 
 body {
@@ -65,9 +58,16 @@ footer {
 }
 
 .column {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-#CV {
-  background-color: var(--khakiweb);
+.logos {
+  display: grid;
+  grid-template-columns: 25% 25% 15% 15%;
+  align-items: center;
+}
+
+.border-top {
+  border-top: 1px var(--khakiweb) solid;
 }
