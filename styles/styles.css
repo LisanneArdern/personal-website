@@ -1,33 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
-:root {
-  --black: #333;
-  --lightskyblue: #d7e6ea;
-  --khakiweb: #81968f;
-}
-
-body {
-  margin: 0px;
-  padding: 10px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 112.5%;
-  line-height: 1.4;
-  color: var(--black);
-  background-color: var(--lightskyblue);
-}
-
-input,
-button,
-textarea {
-  font-size: inherit;
-}
-
-header {
-  padding: 20px;
-  margin-bottom: 40px;
-}
+@import './_base.css';
 
 .button {
   background: var(--black);
