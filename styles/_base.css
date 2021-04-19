@@ -2,12 +2,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --black: #333;
-  --lightskyblue: #d7e6ea;
-  --khakiweb: #81968f;
-}
-
 body {
   margin: 0px;
   padding: 10px;
@@ -23,8 +17,36 @@ button,
 textarea {
   font-size: inherit;
 }
-
-header {
+main {
   padding: 20px;
   margin-bottom: 40px;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+small {
+  padding: 20px 0;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

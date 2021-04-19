@@ -9,8 +9,8 @@
   </head>
 
   <body>
-    <header>
-      <h1>Lisanne Kelly Ardern</h1>
+    <header id="top" class="header">
+      <h1 class="header__heading">Lisanne Kelly Ardern</h1>
       <nav>
         <a class="button" href="#contact">Contact</a>
         <a class="button" href="#bio">Biography</a>
@@ -19,12 +19,14 @@
 
     <main>
       <figure>
-        <img src="images/Minca.JPG" alt="" />
-        <figcaption>Me in Minca, Colombia in 2019</figcaption>
+        <img src="images/IMG_1059optsw-min.jpg" alt="" />
+        <figcaption>
+          Hello! My name is Lisanne and I am learning coding.
+        </figcaption>
       </figure>
 
       <div class="column">
-        <section class="interests">
+        <section class="column__interests">
           <h2>Interests</h2>
           <ul>
             <li>Dancing</li>
@@ -34,7 +36,7 @@
             <li>Animals</li>
           </ul>
         </section>
-        <section class="skills">
+        <section class="column__skills">
           <h2>Skills</h2>
           <ul>
             <li>Empathy</li>
@@ -46,7 +48,7 @@
         </section>
       </div>
 
-      <section id="contact" class="border-top">
+      <section id="contact" class="contact">
         <h2>Contact</h2>
         <nav>
           <a class="button" href="tel:015737852879">Call mobile</a>
@@ -56,37 +58,49 @@
         </nav>
       </section>
 
-      <section>
-        <h2>Social Media</h2>
-        <nav class="logos">
+      <section class="social">
+        <h2 class="social__heading">Social Media</h2>
+        <nav class="social__list">
           <a
             href="https://github.com/LisanneArdern"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="images/githublogo.png" alt="find me on github"
+            ><img
+              src="images/githublogo.png"
+              alt="find me on github"
+              class="social__logos"
           /></a>
           <a
             href="https://codepen.io/lisancita"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="images/codepenlogo.png" alt="find me on codepen"
+            ><img
+              src="images/codepenlogo.png"
+              alt="find me on codepen"
+              class="social__logos"
           /></a>
           <a
             href="https://www.linkedin.com/in/lisanne-ardern-4ab781155/"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="images/linkedinlogo.png" alt="find me on linkedin"
+            ><img
+              src="images/linkedinlogo.png"
+              alt="find me on linkedin"
+              class="social__logos"
           /></a>
           <a
             href="https://www.xing.com/profile/LisanneKelly_Ardern/cv"
             rel="noopener noreferrer"
             target="_blank"
-            ><img src="images/xinglogo.png" alt="find me on xing"
+            ><img
+              src="images/xinglogo.png"
+              alt="find me on xing"
+              class="social__logos"
           /></a>
         </nav>
       </section>
 
-      <section id="bio" class="border-top">
+      <section id="bio" class="cv">
         <h2>Some information about me</h2>
         <p>
           After graduating from high school, I wanted to see something of the
@@ -112,8 +126,8 @@
         </p>
       </section>
 
-      <section id="CV" class="border-top">
-        <h2>My CV</h2>
+      <section class="cv">
+        <h2 class="cv__heading">My CV</h2>
         <h3>Work Experience</h3>
         <dl>
           <dt>04/2021 - present</dt>
@@ -139,9 +153,9 @@
     </main>
 
     <footer>
-      <a class="button" href="#header">Back to the top</a><br />
+      <a class="button" href="#top">Back to the top</a><br />
 
-      <small">Copyright by Lisanne Ardern</small>
+      <small>Copyright by Lisanne Ardern</small>
     </footer>
   </body>
 </html>

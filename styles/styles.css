@@ -1,44 +1,8 @@
 @import './_base.css';
-
-.button {
-  background: var(--black);
-  color: white;
-  border-bottom: none;
-  padding: 8px;
-  border-radius: 4px;
-}
-
-main {
-  padding: 20px;
-  margin-bottom: 40px;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-figure {
-  padding: 0;
-  margin: 0;
-}
-
-footer {
-  padding: 20px;
-  margin-bottom: 40px;
-}
-
-.column {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.logos {
-  display: grid;
-  grid-template-columns: 25% 25% 15% 15%;
-  align-items: center;
-}
-
-.border-top {
-  border-top: 1px var(--khakiweb) solid;
-}
+@import './_variables.css';
+@import './components/header.css';
+@import './components/button.css';
+@import './components/column.css';
+@import './components/social.css';
+@import './components/contact.css';
+@import './components/cv.css';
