@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "live-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx htmlhint '**/*.html'"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/LisanneArdern/personal-website#readme",
   "devDependencies": {
+    "htmlhint": "0.14.2",
     "live-server": "1.2.1"
   }
 }
