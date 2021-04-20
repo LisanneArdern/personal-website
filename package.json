@@ -1,0 +1,27 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server",
+    "style": "npx stylelint '**/*.css'",
+    "test": "npx htmlhint '**/*.html'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LisanneArdern/personal-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LisanneArdern/personal-website/issues"
+  },
+  "homepage": "https://github.com/LisanneArdern/personal-website#readme",
+  "devDependencies": {
+    "htmlhint": "0.14.2",
+    "live-server": "1.2.1",
+    "stylelint": "13.12.0",
+    "stylelint-config-standard": "21.0.0"
+  }
+}

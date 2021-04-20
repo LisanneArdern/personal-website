@@ -1,0 +1,16 @@
+.social__heading {
+  text-align: center;
+}
+
+.social__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.social__logos {
+  height: auto;
+  width: 100px;
+}
