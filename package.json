@@ -1,0 +1,23 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LisanneArdern/personal-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LisanneArdern/personal-website/issues"
+  },
+  "homepage": "https://github.com/LisanneArdern/personal-website#readme",
+  "devDependencies": {
+    "live-server": "1.2.1"
+  }
+}
