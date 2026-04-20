@@ -1,0 +1,151 @@
+:root {
+  /* backgrounds */
+  --color-bg: #ffffff;
+  --color-bg-dark: #111111;
+
+  /* brand colours */
+  --color-purple: #6b3fa0;
+  --color-yellow: #f5e6a3;
+  --color-slate: #b8c4cc;
+  --color-lavender: #e8e4f0;
+  --color-lilac: #cfc0ef;
+
+  /* text on purple bg */
+  --color-purple-text: #c9a8e8;
+  --color-purple-accent: #f5e6a3;
+
+  /* text on dark bg */
+  --color-dark-muted: #8a8a8a;
+  --color-dark-text: #ffffff;
+
+  /* borders & dividers */
+  --color-border: #eeeeee;
+  --color-border-dark: #333333;
+
+  /* text */
+  --color-text-primary: #111111;
+  --color-text-muted: #595959;
+  --color-text-xmuted: #6e6e6e;
+
+  --font-display:
+    'Geist', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui,
+    sans-serif;
+  --font-body:
+    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono:
+    'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --gutter: clamp(1rem, 3.5vw, 2rem);
+  --max: 1280px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-purple);
+  color: var(--color-yellow);
+}
+
+p {
+  margin: 0 0 1.1em;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  color: var(--color-text-primary);
+}
+
+ul,
+ol,
+dl {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-purple);
+  outline-offset: 3px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.6rem;
+  left: 0.6rem;
+  z-index: 200;
+  padding: 0.55rem 0.9rem;
+  background: var(--color-bg-dark);
+  color: var(--color-yellow);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transform: translateY(calc(-100% - 1rem));
+  transition: transform 180ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 2px solid var(--color-yellow);
+  outline-offset: 2px;
+}
+
+main:focus {
+  outline: none;
+}

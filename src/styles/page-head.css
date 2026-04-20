@@ -1,0 +1,29 @@
+.page-head {
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+  border-bottom: 1px solid var(--color-border);
+  display: grid;
+  gap: 1.2rem;
+}
+
+.page-head__label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-xmuted);
+}
+
+.page-head__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  max-width: 20ch;
+}
+
+.page-head__lede {
+  max-width: 56ch;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}

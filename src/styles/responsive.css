@@ -1,0 +1,90 @@
+@media (max-width: 900px) {
+  .portrait-hero__stage {
+    grid-template-columns: 1fr;
+    row-gap: 1.4rem;
+    margin-top: clamp(-1.6rem, -3vw, -2rem);
+    justify-items: center;
+  }
+
+  .portrait-hero__meta,
+  .portrait-hero__tagline {
+    justify-self: center;
+    text-align: center;
+  }
+
+  .portrait-hero__photo {
+    grid-column: auto;
+    order: -1;
+  }
+
+  .tiles {
+    grid-template-columns: 1fr;
+  }
+
+  .cv__item,
+  .cv__group .cv__item,
+  .cv__group,
+  .skills__row,
+  .elsewhere__row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .cv__group {
+    gap: 0.9rem;
+  }
+
+  .cv__group-head {
+    position: static;
+  }
+
+  .cv__period,
+  .skills__row dt {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .topbar__nav {
+    gap: 1.1rem;
+  }
+
+  .portrait-hero__name {
+    font-size: clamp(2.2rem, 12vw, 4rem);
+    letter-spacing: -0.035em;
+  }
+
+  .portrait-hero__tagline {
+    font-size: 0.95rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-marquee__track,
+  .page-transition {
+    animation: none !important;
+  }
+
+  @supports (animation-timeline: view()) {
+    .portrait-hero,
+    .tiles,
+    .page-head,
+    .cv,
+    .about,
+    .snapshots,
+    .elsewhere {
+      animation: none !important;
+    }
+  }
+
+  @supports (animation-timeline: scroll()) {
+    .scroll-progress__bar {
+      animation: none !important;
+      transform: scaleX(0);
+    }
+  }
+
+  * {
+    transition-duration: 0.01ms !important;
+  }
+}
