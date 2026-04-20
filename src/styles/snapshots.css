@@ -1,0 +1,102 @@
+.snapshots {
+  padding: clamp(2.5rem, 5vw, 4rem) 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.photo-marquee {
+  position: relative;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  overflow: hidden;
+  padding: 0.4rem 0;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    black 6%,
+    black 94%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    black 6%,
+    black 94%,
+    transparent 100%
+  );
+}
+
+.photo-marquee__track {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: stretch;
+  width: max-content;
+  gap: clamp(0.6rem, 1vw, 1rem);
+  animation: photo-marquee 52s linear infinite;
+  will-change: transform;
+}
+
+.photo-marquee:hover .photo-marquee__track,
+.photo-marquee:focus-within .photo-marquee__track {
+  animation-play-state: paused;
+}
+
+.photo-marquee[data-paused='true'] .photo-marquee__track {
+  animation-play-state: paused;
+}
+
+.photo-marquee-toggle {
+  padding: 0.4rem 0.8rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  background: var(--color-bg);
+  border: 1px solid var(--color-text-primary);
+  cursor: pointer;
+  transition:
+    background 200ms ease,
+    color 200ms ease;
+  min-height: 24px;
+}
+
+.photo-marquee-toggle:hover,
+.photo-marquee-toggle:focus-visible {
+  background: var(--color-text-primary);
+  color: var(--color-yellow);
+}
+
+.snapshots__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.photo-marquee__item {
+  flex: none;
+  height: clamp(240px, 30vw, 380px);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--color-border);
+}
+
+.photo-marquee__item img {
+  height: 100%;
+  width: auto;
+  display: block;
+  object-fit: cover;
+  filter: saturate(0.95);
+}
+
+@keyframes photo-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.333%);
+  }
+}

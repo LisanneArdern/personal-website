@@ -1,0 +1,17 @@
+.about {
+  padding: clamp(2rem, 4vw, 3rem) 0;
+}
+
+.about__body {
+  max-width: 62ch;
+}
+
+.about__body p {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-text-primary);
+}
+
+.about__body p + p {
+  margin-top: 1.1rem;
+}
