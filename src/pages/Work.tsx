@@ -10,7 +10,7 @@ export default function Work() {
       <PageHead
         eyebrow="Work"
         titleId="work-heading"
-        lede="A mix of client work, personal projects, and things I built just because I wanted to see if I could. Some are finished. Some are getting there."
+        lede="Professional work, personal projects, and things I started just because I wanted to see if I could. Some are finished. Some are getting there."
       >
         Things I&rsquo;ve <span className="block block--purple">built</span>.
       </PageHead>
