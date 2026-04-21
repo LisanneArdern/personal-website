@@ -11,6 +11,22 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: 'SoSafe Analytics',
+    role: 'Frontend',
+    blurb:
+      'Built the frontend for SoSafe\u2019s new analytics dashboard from the ground up. React, TypeScript, and ECharts for e-learning, phishing, and ISO metrics.',
+    stack: ['React', 'TypeScript', 'ECharts'],
+    href: 'https://support.sosafe.de/ProductDoc/analytics',
+  },
+  {
+    title: 'SoSafe Partner Hub',
+    role: 'Frontend & backend',
+    blurb:
+      'Led frontend of a new platform for MSP partners to onboard and manage client awareness training. Two micro frontends, plus backend work on the partner API.',
+    stack: ['React', 'TypeScript', 'Micro Frontends', 'AWS SQS'],
+    href: 'https://support.sosafe.de/PDOC/sosafe-partner-platform',
+  },
+  {
     title: 'Editorial Storybook',
     role: 'Design & build',
     blurb:
