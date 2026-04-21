@@ -29,7 +29,7 @@ export default function App() {
       <div id="top" className="page">
         <header className="topbar">
           <Link className="topbar__brand" to="/">
-            lisanne.dev
+            lisanneardern.com
           </Link>
           <nav className="topbar__nav" aria-label="Primary">
             <NavLink to="/" end>
