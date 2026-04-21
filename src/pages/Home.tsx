@@ -124,10 +124,10 @@ export default function Home() {
           <p>
             I&rsquo;ve lived in Mexico for three years, which means I&rsquo;ve
             eaten very well and picked up enough Spanish to be an active part in
-            the best Mexican family parties. Now I call Taipei home &mdash;
-            I&rsquo;m noticing a pattern with my life choices and good food. I
-            speak English, German, and Spanish fluently, and I&rsquo;m working
-            on my Mandarin one dumpling order at a time.
+            the best Mexican family parties. Now I call Taipei home - I&rsquo;m
+            noticing a pattern with my life choices and good food. I speak
+            English, German, and Spanish fluently, and I&rsquo;m working on my
+            Mandarin one bubble tea order at a time.
           </p>
           <p>
             Outside of work I&rsquo;m usually dancing, discovering a new

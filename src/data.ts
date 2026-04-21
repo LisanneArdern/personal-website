@@ -36,7 +36,7 @@ export const projects: Project[] = [
     href: 'https://capstone-project-ashen.vercel.app/',
   },
   {
-    title: 'lisanne.dev',
+    title: 'lisanneardern.com',
     role: 'Design & build',
     blurb:
       'The site you\u2019re reading. An editorial personal portfolio, slowly being refined.',
