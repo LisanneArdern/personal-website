@@ -45,6 +45,16 @@
 }
 
 @media (max-width: 560px) {
+  .topbar {
+    align-items: flex-start;
+  }
+
+  .topbar__actions {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    gap: 0.6rem;
+  }
+
   .topbar__nav {
     gap: 1.1rem;
   }

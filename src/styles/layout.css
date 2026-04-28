@@ -48,6 +48,12 @@ body::before {
   padding: 0.35rem 0;
 }
 
+.topbar__actions {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
 .topbar__nav {
   display: flex;
   gap: 1.8rem;
@@ -69,6 +75,36 @@ body::before {
 .topbar__nav a.active {
   color: var(--color-purple);
   font-weight: 600;
+}
+
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.15rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+}
+
+.language-switcher__button {
+  min-height: 24px;
+  padding: 0.2rem 0.45rem;
+  border-radius: 999px;
+  color: var(--color-text-muted);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  transition:
+    background 200ms ease,
+    color 200ms ease;
+}
+
+.language-switcher__button:hover {
+  color: var(--color-text-primary);
+}
+
+.language-switcher__button[aria-pressed='true'] {
+  background: var(--color-purple);
+  color: var(--color-yellow);
 }
 
 .footer {

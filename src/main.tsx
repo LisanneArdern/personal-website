@@ -9,6 +9,7 @@ import App from './App'
 import Home from './pages/Home'
 import Work from './pages/Work'
 import Experience from './pages/Experience'
+import { LanguageProvider } from './i18n'
 import './styles.css'
 
 const router = createBrowserRouter([
@@ -32,6 +33,8 @@ if (!rootElement) {
 
 createRoot(rootElement).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <LanguageProvider>
+      <RouterProvider router={router} />
+    </LanguageProvider>
   </StrictMode>,
 )
