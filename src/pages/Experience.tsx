@@ -1,26 +1,32 @@
-import { education, experience, skills } from '../data'
 import PageHead from '../components/PageHead'
+import { useLanguage } from '../useLanguage'
 
 export default function Experience() {
+  const { t } = useLanguage()
+
   return (
     <>
       <PageHead
-        eyebrow="Experience"
+        eyebrow={t.experience.eyebrow}
         titleId="exp-heading"
-        lede="Four years of frontend development. One career pivot. Here’s how it happened."
+        lede={t.experience.lede}
       >
-        Where I&rsquo;ve <span className="block block--purple">been</span>.
+        {t.experience.title.before}{' '}
+        <span className="block block--purple">
+          {t.experience.title.accent}
+        </span>
+        {t.experience.title.after}
       </PageHead>
 
       <section className="cv" aria-labelledby="cv-work">
         <div className="cv__head">
           <h2 className="label" id="cv-work">
-            Work
+            {t.experience.workHeading}
           </h2>
         </div>
 
         <div className="cv__groups">
-          {experience.map(company => (
+          {t.experience.work.map(company => (
             <article key={company.company} className="cv__group">
               <header className="cv__group-head">
                 {company.url ? (
@@ -29,7 +35,7 @@ export default function Experience() {
                     href={company.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`${company.company} \u2014 open company website in a new tab`}
+                    aria-label={`${company.company} — ${t.experience.companyLinkLabel}`}
                   >
                     <h3 className="cv__company">
                       <span className="cv__company-name">
@@ -78,11 +84,11 @@ export default function Experience() {
       <section className="cv" aria-labelledby="cv-edu">
         <div className="cv__head">
           <h2 className="label" id="cv-edu">
-            Education
+            {t.experience.educationHeading}
           </h2>
         </div>
         <ol className="cv__list" role="list">
-          {education.map(item => (
+          {t.experience.education.map(item => (
             <li key={`${item.period}-${item.role}`} className="cv__item">
               <span className="cv__period">{item.period}</span>
               <div className="cv__body">
@@ -104,11 +110,11 @@ export default function Experience() {
       <section className="cv" aria-labelledby="cv-skills">
         <div className="cv__head">
           <h2 className="label" id="cv-skills">
-            Skills &amp; languages
+            {t.experience.skillsHeading}
           </h2>
         </div>
         <dl className="skills">
-          {skills.map(group => (
+          {t.experience.skills.map(group => (
             <div key={group.group} className="skills__row">
               <dt>{group.group}</dt>
               <dd>

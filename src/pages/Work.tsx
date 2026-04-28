@@ -1,26 +1,30 @@
-import { projects } from '../data'
 import { isExternal } from '../lib/links'
 import PageHead from '../components/PageHead'
+import { useLanguage } from '../useLanguage'
 
 const TILE_TONES = ['slate', 'lilac'] as const
 
 export default function Work() {
+  const { t } = useLanguage()
+
   return (
     <>
       <PageHead
-        eyebrow="Work"
+        eyebrow={t.work.eyebrow}
         titleId="work-heading"
-        lede="Professional work, personal projects, and things I started just because I wanted to see if I could. Some are finished. Some are getting there."
+        lede={t.work.lede}
       >
-        Things I&rsquo;ve <span className="block block--purple">built</span>.
+        {t.work.title.before}{' '}
+        <span className="block block--purple">{t.work.title.accent}</span>
+        {t.work.title.after}
       </PageHead>
 
       <section className="section" aria-labelledby="projects-heading">
         <h2 id="projects-heading" className="visually-hidden">
-          Projects
+          {t.work.projectsHeading}
         </h2>
         <ul className="tiles bleed" role="list">
-          {projects.map((project, i) => {
+          {t.work.projects.map((project, i) => {
             const tone = TILE_TONES[i % TILE_TONES.length]
             const external = isExternal(project.href)
             return (
@@ -32,11 +36,9 @@ export default function Work() {
                   rel={external ? 'noopener noreferrer' : undefined}
                   target={external ? '_blank' : undefined}
                 >
-                  {project.wip && (
-                    <span className="tile__wip">Work in progress</span>
-                  )}
+                  {project.wip && <span className="tile__wip">{t.work.workInProgress}</span>}
                   <span className="tile__label">
-                    Project &mdash; {String(i + 1).padStart(2, '0')}
+                    {t.work.projectLabel} &mdash; {String(i + 1).padStart(2, '0')}
                   </span>
                   <h3 className="tile__title">{project.title}</h3>
                   <p className="tile__blurb">{project.blurb}</p>
