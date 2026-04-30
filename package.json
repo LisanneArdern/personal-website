@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
+    "check": "npm run lint && npm run build",
+    "prepare": "husky",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
@@ -29,6 +31,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.5.0",
+    "husky": "^9.1.7",
     "sharp": "^0.34.5",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.58.2",
