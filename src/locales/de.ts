@@ -124,9 +124,17 @@ export const de: Translation = {
         title: 'Harvestly',
         role: 'Design & Umsetzung',
         blurb:
-          'Ein Gartenbegleiter auf Basis der Openfarm API. Pflanzensuche, Wachstumstipps und ein Ort, um festzuhalten, was man angebaut hat.',
-        stack: ['React', 'Storybook', 'Jest', 'Openfarm API'],
+          'Ein Gartenbegleiter mit Pflanzensuche, Wachstumstipps und einem Ort, um festzuhalten, was man angebaut hat. Ursprünglich mit der OpenFarm API gebaut, jetzt mit einer eigenen API neu aufgebaut, nachdem OpenFarm archiviert wurde.',
+        stack: ['React', 'Storybook', 'Jest', 'Eigene API'],
         href: 'https://capstone-project-ashen.vercel.app/',
+      },
+      {
+        title: 'Crops API',
+        role: 'Backend',
+        blurb:
+          'Eine eigene Express API für Harvestly-Pflanzendaten, mit SQLite, CORS-Unterstützung, Error Handling und fehlertoleranter Suche.',
+        stack: ['Node.js', 'Express', 'SQLite', 'Render'],
+        href: 'https://github.com/LisanneArdern/crops-api',
       },
       {
         title: 'lisanneardern.com',
@@ -259,8 +267,23 @@ export const de: Translation = {
         ],
       },
       {
+        group: 'Backend & APIs',
+        items: ['Node.js', 'Express', 'REST APIs', 'SQLite', 'MongoDB', 'AWS SQS'],
+      },
+      {
         group: 'Tools & Workflow',
-        items: ['Vite', 'Next.js', 'Git', 'Figma', 'Vitest', 'Storybook'],
+        items: [
+          'Vite',
+          'Next.js',
+          'Git',
+          'Figma',
+          'Jest',
+          'Vitest',
+          'Storybook',
+          'Cypress',
+          'Render',
+          'Vercel',
+        ],
       },
       {
         group: 'Sprachen',
