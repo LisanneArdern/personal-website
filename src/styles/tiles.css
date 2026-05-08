@@ -28,6 +28,8 @@
 }
 
 .tile {
+  --tile-border-color: var(--color-border);
+
   position: relative;
   display: flex;
   flex-direction: column;
@@ -36,22 +38,17 @@
   min-height: clamp(240px, 24vw, 300px);
   height: 100%;
   color: var(--color-text-primary);
+  background: var(--color-bg);
+  border: 1px solid var(--tile-border-color);
   border-radius: 14px;
   overflow: hidden;
   transition:
     background 420ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 280ms ease,
     color 280ms ease,
     transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 320ms cubic-bezier(0.22, 1, 0.36, 1),
     filter 260ms ease;
-}
-
-.tile--slate {
-  background: var(--color-slate);
-}
-
-.tile--lilac {
-  background: var(--color-lilac);
 }
 
 .tile--featured {
@@ -145,6 +142,8 @@
 
 .tile:hover,
 .tile:focus-visible {
+  --tile-border-color: var(--color-bg-dark);
+
   background: var(--color-bg-dark);
   color: var(--color-yellow);
   transform: translateY(-3px);
