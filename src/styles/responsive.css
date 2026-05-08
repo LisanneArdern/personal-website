@@ -21,6 +21,11 @@
     grid-template-columns: 1fr;
   }
 
+  .tiles > li,
+  .tiles > .tile-item--featured {
+    grid-column: auto;
+  }
+
   .cv__item,
   .cv__group .cv__item,
   .cv__group,

@@ -30,20 +30,22 @@ export const en: Translation = {
     about: {
       eyebrow: 'About',
       title: {
-        before: 'I used to design experiences for travellers. Now I design them for',
+        before:
+          'I used to design experiences for travellers. Now I design them for',
         accent: 'users',
         after: '.',
       },
       ariaLabel: 'About me',
       paragraphs: [
         'My background is in international tourism management, where I spent years building end-to-end products that had to work for people from every corner of the world. That probably has something to do with growing up between two cultures: my mum is German, my dad English, so navigating different perspectives comes naturally.',
-        "When COVID brought the industry to a halt, I didn't slow down with it. I used the time to go deep on something I'd always been drawn to: digital products. Four years later I'm a frontend developer who still thinks like a product designer, building interfaces that are as considered as they are functional.",
-        "I've lived in Mexico for three years, which means I've eaten very well and picked up enough Spanish to be an active part in the best Mexican family parties. Now I call Taipei home - I'm noticing a pattern with my life choices and good food. I speak English, German, and Spanish fluently, and I'm working on my Mandarin one bubble tea order at a time.",
-        "Outside of work I'm usually dancing, discovering a new neighbourhood, or hunting down the best meal in whatever city I'm in.",
+        "Part of that journey took me to Mexico for three years, where I worked in tourism product development, designing experiences for an incredibly diverse range of guests: from backpackers to luxury travellers, across cultures and languages. The Spanish and the food were a bonus I didn't see coming.",
+        "When COVID brought the industry to a halt, I didn't slow down with it. I used the time to go deep on something I'd always been drawn to: digital products. Four years later I'm a frontend developer who still thinks like a product designer, building interfaces that are as considered as they are functional and always with the person using them in mind.",
+        'Now I call Taipei home. Mexico, then Taiwan. Good food seems to be a recurring theme in my decision making.',
+        "Outside of work I'm usually dancing, discovering a new neighbourhood, or hunting down the best meal in whatever city I'm in. I've always been drawn to things that push me - whether that's moving to a new country, learning a new skill, or taking on a problem that doesn't have an obvious solution yet.",
       ],
       cta: {
         before:
-          "I'm currently open to new opportunities in Taipei. If you're building something that deserves to be beautiful,",
+          "I'm currently open to new opportunities in Taipei. If you're building something where the users actually matter,",
         link: "let's talk",
         after: '.',
       },
@@ -93,7 +95,10 @@ export const en: Translation = {
         blurb:
           "Built the frontend for SoSafe's new analytics dashboard from the ground up. React, TypeScript, and ECharts for e-learning, phishing, and ISO metrics.",
         stack: ['React', 'TypeScript', 'ECharts'],
+        scope:
+          'Part of a platform used by 6,000+ organisations across Europe. Developed over 14 months.',
         href: 'https://support.sosafe.de/ProductDoc/analytics',
+        featured: true,
       },
       {
         title: 'SoSafe Partner Hub',
@@ -101,7 +106,10 @@ export const en: Translation = {
         blurb:
           'Led frontend of a new platform for MSP partners to onboard and manage client awareness training. Two micro frontends, plus backend work on the partner API.',
         stack: ['React', 'TypeScript', 'Micro Frontends', 'AWS SQS'],
+        scope:
+          'Built from concept to launch over 12 months. Used by 200+ MSP partners.',
         href: 'https://support.sosafe.de/PDOC/sosafe-partner-platform',
+        featured: true,
       },
       {
         title: 'Editorial Storybook',
@@ -149,8 +157,8 @@ export const en: Translation = {
   experience: {
     eyebrow: 'Experience',
     title: {
-      before: "Where I've",
-      accent: 'been',
+      before: 'My working',
+      accent: 'history',
       after: '.',
     },
     lede: "Four years of frontend development. One career pivot. Here's how it happened.",
@@ -219,7 +227,7 @@ export const en: Translation = {
             role: 'Lifestyle Manager',
             period: '11/2019 — 01/2021',
             bullets: [
-              'Concierge-style work for high-touch clients across travel, dining, and events — an unexpected education in writing clearly, listening carefully, and finishing things.',
+              'Concierge-style service for high-net-worth clients across travel, dining, and events. Learned to communicate clearly under pressure and deliver without exception.',
             ],
           },
         ],
@@ -240,7 +248,7 @@ export const en: Translation = {
             role: 'Travel Agent',
             period: '06/2018 — 06/2019',
             bullets: [
-              'Built custom itineraries across the region, mostly for European travellers — logistics, budgets, and pacing for long-haul trips.',
+              'Built custom itineraries across the region for European long-haul travellers, managing logistics, budgets, and the kind of pacing that makes or breaks a six-week trip.',
             ],
           },
         ],
@@ -268,7 +276,14 @@ export const en: Translation = {
       },
       {
         group: 'Backend & APIs',
-        items: ['Node.js', 'Express', 'REST APIs', 'SQLite', 'MongoDB', 'AWS SQS'],
+        items: [
+          'Node.js',
+          'Express',
+          'REST APIs',
+          'SQLite',
+          'MongoDB',
+          'AWS SQS',
+        ],
       },
       {
         group: 'Tools & workflow',
