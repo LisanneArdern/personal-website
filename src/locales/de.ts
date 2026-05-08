@@ -30,20 +30,22 @@ export const de: Translation = {
     about: {
       eyebrow: 'Über mich',
       title: {
-        before: 'Früher habe ich Erlebnisse für Reisende gestaltet. Heute gestalte ich sie für',
+        before:
+          'Früher habe ich Erlebnisse für Reisende gestaltet. Heute gestalte ich sie für',
         accent: 'Nutzer:innen',
         after: '.',
       },
       ariaLabel: 'Über mich',
       paragraphs: [
         'Mein Hintergrund liegt im internationalen Tourismusmanagement, wo ich jahrelang End-to-End-Produkte entwickelt habe, die für Menschen aus aller Welt funktionieren mussten. Das hat wahrscheinlich auch damit zu tun, dass ich zwischen zwei Kulturen aufgewachsen bin: meine Mutter ist Deutsche, mein Vater Engländer. Unterschiedliche Perspektiven zu verstehen, fühlt sich für mich deshalb ganz natürlich an.',
-        'Als COVID die Branche zum Stillstand brachte, habe ich nicht einfach mit angehalten. Ich habe die Zeit genutzt, um tief in ein Thema einzutauchen, das mich schon immer angezogen hat: digitale Produkte. Vier Jahre später bin ich Frontend-Entwicklerin und denke immer noch wie eine Produktdesignerin: Ich baue Interfaces, die durchdacht und funktional sind.',
-        'Ich habe drei Jahre in Mexiko gelebt, sehr gut gegessen und genug Spanisch gelernt, um bei den besten mexikanischen Familienfeiern aktiv dabei zu sein. Jetzt nenne ich Taipeh mein Zuhause - bei meinen Lebensentscheidungen und gutem Essen erkenne ich langsam ein Muster. Ich spreche fließend Englisch, Deutsch und Spanisch und arbeite an meinem Mandarin, eine Bubble-Tea-Bestellung nach der anderen.',
-        'Außerhalb der Arbeit tanze ich meistens, entdecke ein neues Viertel oder suche in der Stadt, in der ich gerade bin, nach dem besten Essen.',
+        'Dieser Weg führte mich auch drei Jahre nach Mexiko, wo ich im Tourismus-Produktmanagement gearbeitet und Erlebnisse für die unterschiedlichsten Gäste konzipiert habe: von Backpacker:innen bis zu Luxusreisenden, über Kulturen und Sprachen hinweg. Spanisch und das Essen waren ein Bonus, mit dem ich nicht gerechnet habe.',
+        'Als COVID die Branche zum Stillstand brachte, habe ich nicht einfach mit angehalten. Ich habe die Zeit genutzt, um tief in etwas einzutauchen, das mich schon immer angezogen hat: digitale Produkte. Vier Jahre später bin ich Frontend-Entwicklerin, denke aber immer noch wie eine Produktdesignerin und baue Interfaces, die genauso durchdacht wie funktional sind - mit der Person im Blick, die sie tatsächlich nutzt.',
+        'Jetzt nenne ich Taipeh mein Zuhause. Mexiko, dann Taiwan. Gutes Essen scheint bei meinen Lebensentscheidungen eine Rolle zu spielen.',
+        'Außerhalb der Arbeit tanze ich meistens, entdecke ein neues Viertel oder suche in der Stadt, in der ich gerade bin, nach dem besten Essen. Mich zieht es zu Dingen, die mich herausfordern - ob ein Umzug in ein neues Land, das Erlernen einer neuen Fähigkeit oder ein Problem ohne offensichtliche Lösung.',
       ],
       cta: {
         before:
-          'Ich bin aktuell offen für neue Möglichkeiten in Taipeh. Wenn du an etwas arbeitest, das schön werden soll,',
+          'Ich bin aktuell offen für neue Möglichkeiten in Taipeh. Wenn du etwas aufbaust, bei dem es wirklich um die Nutzer:innen geht,',
         link: 'lass uns sprechen',
         after: '.',
       },
@@ -93,7 +95,10 @@ export const de: Translation = {
         blurb:
           'Ich habe das Frontend für das neue Analytics-Dashboard von SoSafe von Grund auf gebaut. React, TypeScript und ECharts für E-Learning-, Phishing- und ISO-Metriken.',
         stack: ['React', 'TypeScript', 'ECharts'],
+        scope:
+          'Teil einer Plattform, die von 6.000+ Organisationen in Europa genutzt wird. Entwickelt über 14 Monate.',
         href: 'https://support.sosafe.de/ProductDoc/analytics',
+        featured: true,
       },
       {
         title: 'SoSafe Partner Hub',
@@ -101,7 +106,10 @@ export const de: Translation = {
         blurb:
           'Ich habe das Frontend einer neuen Plattform für MSP-Partner geleitet, mit der sie Awareness-Trainings für Kund:innen einrichten und verwalten können. Zwei Micro Frontends plus Backend-Arbeit an der Partner API.',
         stack: ['React', 'TypeScript', 'Micro Frontends', 'AWS SQS'],
+        scope:
+          'Von der Konzeption bis zum Launch über 12 Monate aufgebaut. Genutzt von 200+ MSP-Partnern.',
         href: 'https://support.sosafe.de/PDOC/sosafe-partner-platform',
+        featured: true,
       },
       {
         title: 'Editorial Storybook',
@@ -149,8 +157,8 @@ export const de: Translation = {
   experience: {
     eyebrow: 'Erfahrung',
     title: {
-      before: 'Wo ich',
-      accent: 'war',
+      before: 'Meine',
+      accent: 'Berufsgeschichte',
       after: '.',
     },
     lede: 'Vier Jahre Frontend-Entwicklung. Ein beruflicher Neustart. So ist es passiert.',
@@ -166,7 +174,7 @@ export const de: Translation = {
         roles: [
           {
             role: 'Fullstack Engineer',
-            period: '01/2025 — 10/2025',
+            period: '01/2025 - 10/2025',
             bullets: [
               'Ich leitete die Frontend-Entwicklung einer neuen Partnerplattform mit zwei Micro Frontends (React, TypeScript) und baute das UI von Grund auf.',
               'Ich unterstützte die Entwicklung des Backend-Microservices für die Partnerplattform, inklusive Kundenverwaltung, Lizenzierung, Vendor-Client-Beziehungen, Subscription Management und serviceübergreifender Integration mit TypeScript und AWS SQS.',
@@ -174,7 +182,7 @@ export const de: Translation = {
           },
           {
             role: 'Frontend Engineer',
-            period: '10/2023 — 12/2024',
+            period: '10/2023 - 12/2024',
             bullets: [
               'Ich entwickelte Datenanalyse-Dashboards mit der ECharts-Bibliothek.',
               'Ich modernisierte die alte Self-Service-Plattform durch Refactoring von JavaScript-basierten React-Klassenkomponenten mit Redux zu TypeScript, funktionsbasierten Komponenten und optimiertem State Management mit React Hooks (useState, useContext), während Redux auf die notwendigen Fälle reduziert wurde.',
@@ -185,7 +193,7 @@ export const de: Translation = {
           },
           {
             role: 'Junior Frontend Engineer',
-            period: '10/2021 — 09/2023',
+            period: '10/2021 - 09/2023',
             bullets: [
               'Ich erhöhte die Zuverlässigkeit, indem ich zentrale Teile der JavaScript-Codebase nach TypeScript überführte.',
               'Ich lieferte als alleinige Frontend-Entwicklerin ein neues Address-Manager-Tool und trieb die UI-Umsetzung gemeinsam mit Product Design und Backend-Entwicklung voran.',
@@ -201,7 +209,7 @@ export const de: Translation = {
         roles: [
           {
             role: 'Trainee Web Development',
-            period: '04/2021 — 07/2021',
+            period: '04/2021 - 07/2021',
             bullets: [
               'Responsive Websites mit HTML, CSS, JavaScript und React.',
               'Backend und Datenbanken: node.js, MongoDB, Express, Mongoose.',
@@ -217,7 +225,7 @@ export const de: Translation = {
         roles: [
           {
             role: 'Lifestyle Manager',
-            period: '11/2019 — 01/2021',
+            period: '11/2019 - 01/2021',
             bullets: [
               'Concierge-Arbeit für anspruchsvolle Kund:innen in den Bereichen Reisen, Gastronomie und Events - eine unerwartete Schule darin, klar zu schreiben, aufmerksam zuzuhören und Dinge fertigzustellen.',
             ],
@@ -231,16 +239,16 @@ export const de: Translation = {
         roles: [
           {
             role: 'Product Developer',
-            period: '06/2019 — 11/2019',
+            period: '06/2019 - 11/2019',
             bullets: [
               'Ich entwarf und kalkulierte länderübergreifende Reisepakete in Lateinamerika und koordinierte lokale Veranstalter und Partner.',
             ],
           },
           {
             role: 'Travel Agent',
-            period: '06/2018 — 06/2019',
+            period: '06/2018 - 06/2019',
             bullets: [
-              'Ich erstellte individuelle Reiserouten in der Region, vor allem für europäische Reisende - Logistik, Budgets und Timing für Langstreckenreisen.',
+              'Maßgeschneiderte Reiserouten durch Lateinamerika für europäische Langzeitreisende, von der Logistik über Budgets bis hin zum Rhythmus, der über eine gelungene sechswöchige Reise entscheidet.',
             ],
           },
         ],
@@ -248,7 +256,7 @@ export const de: Translation = {
     ],
     education: [
       {
-        period: '10/2014 — 09/2017',
+        period: '10/2014 - 09/2017',
         role: 'B.A. International Tourism Management',
         org: 'Fachhochschule Westküste',
         location: 'Heide, Deutschland',
@@ -268,7 +276,14 @@ export const de: Translation = {
       },
       {
         group: 'Backend & APIs',
-        items: ['Node.js', 'Express', 'REST APIs', 'SQLite', 'MongoDB', 'AWS SQS'],
+        items: [
+          'Node.js',
+          'Express',
+          'REST APIs',
+          'SQLite',
+          'MongoDB',
+          'AWS SQS',
+        ],
       },
       {
         group: 'Tools & Workflow',

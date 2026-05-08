@@ -11,7 +11,9 @@ export type Project = {
   role: string
   blurb: string
   stack: string[]
+  scope?: string
   href: string
+  featured?: boolean
   wip?: boolean
 }
 

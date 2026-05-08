@@ -11,7 +11,8 @@ export default function Experience() {
         titleId="exp-heading"
         lede={t.experience.lede}
       >
-        {t.experience.title.before}{' '}
+        {t.experience.title.before}
+        {t.experience.title.before ? ' ' : ''}
         <span className="block block--purple">
           {t.experience.title.accent}
         </span>

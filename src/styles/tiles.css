@@ -8,7 +8,7 @@
 
 .tiles {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: clamp(0.75rem, 1.2vw, 1.1rem);
   background: transparent;
   align-items: stretch;
@@ -19,7 +19,12 @@
 
 .tiles > li {
   display: grid;
+  grid-column: span 2;
   list-style: none;
+}
+
+.tiles > .tile-item--featured {
+  grid-column: span 3;
 }
 
 .tile {
@@ -47,6 +52,10 @@
 
 .tile--lilac {
   background: var(--color-lilac);
+}
+
+.tile--featured {
+  min-height: clamp(290px, 30vw, 360px);
 }
 
 .tile__label {
@@ -88,13 +97,27 @@
   max-width: 32ch;
 }
 
+.tile--featured .tile__title {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  max-width: 18ch;
+}
+
+.tile--featured .tile__blurb {
+  max-width: 54ch;
+}
+
 .tile__foot {
   margin-top: auto;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  gap: 0.5rem;
+  gap: 1rem;
   padding-top: 1rem;
+}
+
+.tile__meta {
+  display: grid;
+  gap: 0.45rem;
 }
 
 .tile__stack {
@@ -103,6 +126,14 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(17, 17, 17, 0.72);
+}
+
+.tile__scope {
+  display: block;
+  max-width: 52ch;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: rgba(17, 17, 17, 0.62);
 }
 
 .tile__arrow {
@@ -139,6 +170,11 @@
 .tile:hover .tile__blurb,
 .tile:focus-visible .tile__blurb {
   color: rgba(245, 230, 163, 0.8);
+}
+
+.tile:hover .tile__scope,
+.tile:focus-visible .tile__scope {
+  color: rgba(245, 230, 163, 0.72);
 }
 
 .tile:hover .tile__title,

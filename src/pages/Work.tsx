@@ -28,9 +28,12 @@ export default function Work() {
             const tone = TILE_TONES[i % TILE_TONES.length]
             const external = isExternal(project.href)
             return (
-              <li key={project.title}>
+              <li
+                key={project.title}
+                className={project.featured ? 'tile-item--featured' : undefined}
+              >
                 <a
-                  className={`tile tile--${tone}`}
+                  className={`tile tile--${tone}${project.featured ? ' tile--featured' : ''}`}
                   href={project.href}
                   aria-label={`${project.title} \u2014 ${project.role}`}
                   rel={external ? 'noopener noreferrer' : undefined}
@@ -43,8 +46,13 @@ export default function Work() {
                   <h3 className="tile__title">{project.title}</h3>
                   <p className="tile__blurb">{project.blurb}</p>
                   <span className="tile__foot">
-                    <span className="tile__stack">
-                      {project.stack.join(' \u00B7 ')}
+                    <span className="tile__meta">
+                      <span className="tile__stack">
+                        {project.stack.join(' \u00B7 ')}
+                      </span>
+                      {project.scope && (
+                        <span className="tile__scope">{project.scope}</span>
+                      )}
                     </span>
                     <span className="tile__arrow" aria-hidden="true">
                       {external ? '\u2197' : '\u2192'}
