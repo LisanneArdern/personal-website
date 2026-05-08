@@ -2,8 +2,6 @@ import { isExternal } from '../lib/links'
 import PageHead from '../components/PageHead'
 import { useLanguage } from '../useLanguage'
 
-const TILE_TONES = ['slate', 'lilac'] as const
-
 export default function Work() {
   const { t } = useLanguage()
 
@@ -25,7 +23,6 @@ export default function Work() {
         </h2>
         <ul className="tiles bleed" role="list">
           {t.work.projects.map((project, i) => {
-            const tone = TILE_TONES[i % TILE_TONES.length]
             const external = isExternal(project.href)
             return (
               <li
@@ -33,7 +30,7 @@ export default function Work() {
                 className={project.featured ? 'tile-item--featured' : undefined}
               >
                 <a
-                  className={`tile tile--${tone}${project.featured ? ' tile--featured' : ''}`}
+                  className={`tile${project.featured ? ' tile--featured' : ''}`}
                   href={project.href}
                   aria-label={`${project.title} \u2014 ${project.role}`}
                   rel={external ? 'noopener noreferrer' : undefined}
